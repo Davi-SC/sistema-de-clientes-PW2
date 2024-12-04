@@ -7,18 +7,18 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/conteudo/index.html");
+  res.sendFile(__dirname + "/src/index.html");
 });
 
 app.get("/listar", (req, res) => {
-  res.sendFile(__dirname + "/conteudo/listar.html");
+  res.sendFile(__dirname + "/src/listar.html");
 });
 
 app.get("/cadastrar", (req, res) => {
-  res.sendFile(__dirname + "/conteudo/cadastrar.html");
+  res.sendFile(__dirname + "/src/cadastrar.html");
 });
 
 app.listen(3000, () => {

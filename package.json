@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Davi-SC/sistema-de-clientes-PW2#readme",
   "description": "",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
   }
 }
